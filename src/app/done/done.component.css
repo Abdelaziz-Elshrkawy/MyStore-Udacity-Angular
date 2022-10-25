@@ -1,7 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-background-color: #133e44;
+
+h1, h3{
+  text-align: center;
+  color: #fff;
 }
+
+h1{
+  margin-top: 200px;
+}
+
+div{
+  text-align: center;
+}
+
 button{
   background-color: #4CAF50;
   border: none;
@@ -24,3 +34,4 @@ button:active{
   background-color: #134114;
   transition: 0.2s;
 }
+

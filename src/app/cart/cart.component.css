@@ -1,0 +1,110 @@
+*{
+  text-align: center;
+}
+.container{
+  display: grid;
+  grid-template-areas:
+  'a b c';
+  height: auto;
+}
+.sub{
+  margin-top: 10px;
+}
+img {
+  display: inline;
+  margin: auto;
+  width: 150px;
+  border-radius: 15%;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+img:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px black;
+  opacity: 1;
+}
+img:active{
+  transform: scale(1);
+  box-shadow: none;
+  transition: 0.05s;
+}
+#data{
+  font-size: 1rem;
+}
+.container div div, label {
+  color: white;
+  font-size: 1.2rem;
+}
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 4%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 0 0 10px 2px black;
+}
+
+button:active{
+  box-shadow: none;
+  background-color: #134114;
+  transition: 0.2s;
+}
+
+
+option{
+  font-size: 1rem;
+}
+
+input{
+  border-radius: 10%;
+  border: none;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+h1{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.space{
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  grid-area: b;
+  margin: 0;
+  padding: 0;
+}
+.btn{
+  margin-top: 100px;
+  margin-right: 300px;
+}
+.submit{
+  background-color: #275992;
+  margin-bottom: 20px;
+  padding: 15px 50px;
+  cursor: pointer;
+}
+.submit:active{
+  background-color: #1e2e75;
+}
+.check input[type=text],input[type=email],input[name=card]{
+  padding: 8px 40px;
+  background-color: #ffffff;
+  margin: 8px 0;
+  color: black;
+}
+
+.check input[type=number]::-webkit-inner-spin-button,
+.check input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

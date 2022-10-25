@@ -1,0 +1,44 @@
+  <div class="space" *ngIf="!cart.length">
+    <p>
+      Your Cart is empty
+    </p>
+    <button routerLink="/">
+      Return Home
+    </button>
+</div>
+<div *ngIf="cart.length">
+  <h1>Order Checkout</h1><br>
+  <p class="space">Total: {{total | currency: 'USD'}}</p>
+  <form  class="check" #form="ngForm">
+        <input type="text" name="name" [(ngModel)]="name" placeholder="Full name" pattern='([a-zA-Z]+\s){2,}([a-zA-Z]+)'  minlength="15" required #fullName="ngModel"><br>
+        <input type="text" name="email" [(ngModel)]="emailAddress" pattern="[a-zA-Z0-9-_]{1,}@[a-zA-Z0-9-_]{1,}.[a-zA-Z]{1,}\.com" placeholder="Email address"  minlength="3" required #email="ngModel"><br>
+        <input type="text" name="card" [(ngModel)]="card" pattern="(\d{4}(\s)?){4}" placeholder="Credit card numbers" minlength="16" maxlength="16" required #cardNumbers="ngModel"><br><br>
+        <button class="submit" [disabled]="form.invalid" type="submit" (click)="clearCart()" routerLink="/success/{{total}}">Submit order</button>
+  </form>
+      <div class="error-message" *ngIf="cardNumbers.errors?.pattern || cardNumbers.errors?.minlength">
+        Please enter a valid card number (16 Number)
+    </div>
+    <div class="error-message" *ngIf="fullName.errors?.pattern || fullName.errors?.minlength">
+        Please enter Your full name
+    </div>
+    <div class="error-message" *ngIf="email.errors?.pattern">
+        Please enter a valid email address
+    </div>
+</div>
+
+
+<div  class="container">
+  <div class="sub" *ngFor="let product of cart">
+    <img routerLink="/productpage/{{product.id}}" src={{product.url}} alt="product-img">
+    <div id="data">{{product.name}}</div>
+    <div id="data">Price: {{product.price | currency: 'USD'}}</div>
+    <div id="data">{{product.description}} </div>
+    <div id="data">Total: {{product.total | currency: 'USD'}} </div>
+    <input min="1" type="number" value="{{product.quantity}}" onkeydown="return false" (change)="quantity(product, $event)">
+  <br>
+  <button class type="submit" style="margin-top: 20px;" (click)="removeProduct(product)" >Remove</button>
+</div>
+
+
+
+

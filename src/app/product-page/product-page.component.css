@@ -1,0 +1,43 @@
+*{
+  text-align: center;
+}
+
+.container  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+img {
+  display: inline;
+  margin: auto;
+  width: 500px;
+  border-radius: 20%;
+  transition: 0.5s;
+  cursor: auto;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.container div p {
+  color: white;
+  font-size: 55px;
+  text-align: center;
+}
+
+
+input{
+  border: none;
+  padding: 4px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+select{
+  background: #404669;
+  color: #fff;
+  padding:10px 50px;
+  margin:10px 0;
+  border: 0;
+}
+option{
+  font-size: 1rem;
+}

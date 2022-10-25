@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="img">
+    <img src="{{product?.url}}" alt="productImg">
+  </div>
+  <div class="data">
+    <p>{{product?.name}}</p>
+    <p>{{product?.price | currency: 'USD'}}</p>
+    <p>{{product?.description}}</p>
+    <form>
+    <select class="items" (change)="quantity($event)">
+      <option *ngFor="let n of numbers">{{n}}</option>
+    </select>
+    <br>
+    <button type="submit" (click)="addToCart(product)">Add to cart</button>
+  </form>
+  </div>
+  </div>
+

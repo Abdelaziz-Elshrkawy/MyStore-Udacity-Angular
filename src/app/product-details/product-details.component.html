@@ -1,0 +1,14 @@
+
+<div  class="container">
+  <div class="sub">
+    <img routerLink="/productpage/{{product.id}}" src={{product.url}} alt="product-img">
+    <div class="name">{{product.name}}</div>
+    <div class="price">{{product.price | currency: 'USD'}}</div>
+  <form >
+    <select class="items" [(ngModel)]="option" name="option">
+      <option *ngFor="let n of numbers">{{n}}</option>
+    </select>
+    <br>
+    <button type="submit" (click)="onSubmit()" (click)="addProductToCart(product)">Add to cart</button>
+  </form>
+</div>

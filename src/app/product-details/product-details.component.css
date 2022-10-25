@@ -1,0 +1,82 @@
+.container{
+  display:inline;
+}
+
+.sub{
+  display: inline-block;
+  width: 600px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+img {
+  display: inline;
+  margin: auto;
+  width: 400px;
+  border-radius: 15%;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+img:hover{
+  position: relative;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px black;
+  opacity: 1;
+  transition: top ease 0.5s;
+  transition: 0.5s;
+  top: -2px;
+}
+img:active{
+  transform: scale(1);
+  box-shadow: none;
+  transition: 0.05s;
+  top: 0;
+}
+
+.container div div {
+  color: white;
+  font-size: 2rem;
+}
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 4%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 0 0 10px 2px black;
+}
+
+button:active{
+  box-shadow: none;
+  background-color: #134114;
+  transition: 0.2s;
+}
+
+
+.items{
+  background: #404669;
+  color: #fff;
+  padding:18px 60px;
+  margin:10px 0;
+  border: 0;
+}
+option{
+  font-size: 1rem;
+}
+
+.name, .price {
+  padding: -30px;
+  margin: -30px;
+}
