@@ -17,6 +17,6 @@ class Product {
   }
 }
 
-const numberArr = Array.from({length: 9}, (_,i)=>i+1)
+const numberArr = Array.from({ length: 9 }, (_, i) => i + 1);
 export {Product, numberArr}
 

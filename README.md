@@ -1,5 +1,9 @@
 # MyStore
 
+Note the app is for is to learning angular it doesn't contain Responsive Design
+
+## [LiveDemo](https://mystore.abdelaziz-elshr.repl.co/)
+
 ![Home Page](./Home-Page.png)
 
 ## This Project is For Udacity Angular Cross Skills NanoDegree
