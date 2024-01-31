@@ -2,7 +2,7 @@
 
 Note the app is for is to learning angular it doesn't contain Responsive Design
 
-## [LiveDemo](https://mystore.abdelaziz-elshr.repl.co/)
+## [LiveDemo](https://6a5cf18a-49bb-487d-be58-ee1ca18f298a-00-3urhgx4cbvblt.spock.replit.dev/)
 
 
 ![Home Page](./Home-Page.png)
